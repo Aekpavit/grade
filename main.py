@@ -15,3 +15,8 @@ class GradeCalculator:
             return "F"
 
 
+def show_result(score):
+    print("\n===== หน้าแสดงผล =====")
+    calc = GradeCalculator(score)
+    print("คะแนน:", score)
+    print("เกรด:", calc.get_grade())
